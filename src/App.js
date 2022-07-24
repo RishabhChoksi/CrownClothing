@@ -1,18 +1,15 @@
 import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/homepage/homepage.component";
-
-const Hats = (props) => {
-  console.log(props);
-  return <h1>Hats page</h1>;
-};
+import ShopPage from "./pages/shop/shop.component";
+import "./App.css";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/hats" element={<Hats />} />
+        <Route path="/shop" element={<ShopPage />} />
       </Routes>
     </>
   );
